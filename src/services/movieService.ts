@@ -1,7 +1,8 @@
 import axios from "axios";
 import type { Movie } from "../types/movie";
 
-const BASE_URL = "https://api.themoviedb.org/3";
+const BASE_URL =
+  "https://api.themoviedb.org/3/search/movie?include_adult=false&language=en-US&page=1";
 const TOKEN = import.meta.env.VITE_TMDB_TOKEN;
 
 interface FetchMoviesResponse {
